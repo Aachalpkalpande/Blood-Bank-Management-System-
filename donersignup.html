@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Details Form</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #ffffff; /* White background color */
+  background-image: linear-gradient(to right, #ffffff, skyblue); /* Red linear gradient */
+  background-pattern:
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+h1{
+    text-align:center;
+    font-size:40px;
+}
+input{
+    border-radius:10px;
+}
+label{
+    font-size:20px;
+}
+
+.container {
+  width: 500px;
+  margin: 5% auto;
+  padding: 10px;
+  padding-right:40px;
+  background-color: #64b6c4;
+  border-radius:20px;
+	box-shadow:0 0 20px black;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius:10px;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Donor SignIn</h1>
+
+  <form action="action_page.php" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="age">age</label>
+      <input type="age" class="form-control" id="age" name="age" required>
+    </div>
+    <div class="radio-group">
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+  </div><br>
+    <div class="form-group">
+       <label for="blood group">Blood group</label>
+        <select id="seats">
+            <option value="default" selected>select blood group type</option>
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="AB+">AB+</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="A-">A-</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+    </div><br>
+    <div class="form-group">
+      <label for="phone">phone</label>
+      <input type="text" class="form-control" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="username">username</label>
+      <input type="username" class="form-control" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">password</label>
+      <input type="text" class="form-control" id="password" name="password" required>
+    </div>
+   
+    <button type="submit" class="btn">Sign In</button>
+  </form>
+</div>
+</body>
+</html>
+
+
+
+

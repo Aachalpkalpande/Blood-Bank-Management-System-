@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME</title>
+  <style>
+  body
+  {
+      background:skyblue;
+  }
+  h1{
+     font-size:60px;
+     
+  }
+  h2{
+      font-size:40px;
+      text-align:center;
+  }
+  body{
+  
+ background-color: #ffffff; /* White background color */
+  background-image: linear-gradient(to right, #ffffff, skyblue); /* Red linear gradient */
+/*  background-pattern:*/
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+  .home-contain{
+      color:black;
+      display:flex;
+      padding:10% 10px;
+      height:500px;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      
+  }
+    /* CSS for the navigation bar */
+    .nav {
+      background-color: #1d4b59;
+      overflow: hidden;
+      border-radius:10px;
+    }
+
+    .nav a {
+      float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 20px 20px;
+text-decoration: none;
+border-radius: 10px;
+    }
+    
+
+    .nav a:hover {
+      background-color: orange;
+      color: black;
+    }
+
+    .nav a.active {
+      background-color: #04AA6D;
+      color: white;
+      border-radius:10px;
+    }
+    .navbar-right {
+            /* margin: 6px; */
+            float: right;
+        }
+
+        .login-button {
+            background-color: grey;
+            color: #fff;
+            padding: 0px;
+            border: none;
+            cursor: pointer;
+        }
+        #myLinks {
+            display: none;
+            float: right;
+        }
+
+        #myLinks a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="donersignup.html">Donor Registration</a>
+    <a href="receiversignup.html">Receiver Registration</a>
+    <a href="services.html">Services</a>
+    <a href="availableblood.html">Available blood</a>
+    <a href="#">Hospital Info</a>
+    <a href="contact us.html">Contact Us</a>
+    <a href="about us.html">About Us</a>
+    <div class="navbar-right">
+            <button class="login-button"><a href="#" onclick="myFunction()">Login</a></button>
+        </div>
+        <div id="myLinks">
+            <a href="login.html">Donor</a>
+            <a href="login.html">Receiver</a>
+          </div>
+  </nav>
+  <div class="home-contain">
+      <h1>BLOOD BANK MANAGEMENT SYSTEM</h1>
+      <h2><i>!!Save lives today.Donate blood!!</i></h2>
+  </div>
+  <script type="text/javascript" charset="utf-8">
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+  
+  <!-- Rest of the page content goes here -->
+
+</body>
+</html>
+
+
+
+

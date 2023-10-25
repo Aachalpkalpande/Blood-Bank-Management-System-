@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign In Page</title>
+<style>
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff; /* White background color */
+  background-image: linear-gradient(to right, #ffffff, skyblue); /* Red linear gradient */
+  background-pattern:
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+h1{
+    color:black;
+    text-align:center;
+    font-size:50px;
+}
+p{
+    font-size:20px;
+}
+input{
+    border-radius:10px;
+    background-color:white;
+}
+label{
+    color:black;
+    font-size:30px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #64b6c4;
+  color:white;
+  border-radius:30px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius:10px;
+}
+
+.btn:hover {
+  background-color: black;
+}
+</style>
+</head>
+<body>
+<br>
+<br>
+<br>
+    
+<div class="container">
+  <h1>Login</h1>
+  
+
+  <form action="action_page.php" method="post">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <button type="submit" class="btn"><b>LogIn</b></button>
+    <a href="forgot-password.php">Forgot Password?</a>
+  </form>
+</div>
+</body>
+</html>
+
+
+
